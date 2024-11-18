@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nikitka"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/panel1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <EditText
+            android:id="@+id/et_v1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:hint="Вмест 1"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            />
+        <EditText
+            android:id="@+id/et_l1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:hint="Колич 1"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/but_v1"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Создать"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/panel2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/panel1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <EditText
+            android:id="@+id/et_v2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:hint="Вмест 2"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            />
+        <EditText
+            android:id="@+id/et_l2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#e0e0e0"
+            android:hint="Колич 2"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            />
+        <Button
+            android:id="@+id/but_v2"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Создать"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/but_v3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/panel2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Показать"
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#e0e0e0"
+        android:minHeight="48dp"
+        android:padding="13dp"
+        android:text="Автобус 1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/but_v3"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Автобус 2"
+        android:background="#e0e0e0"
+        android:layout_margin="10dp"
+        android:minHeight="48dp"
+        android:padding="13dp"
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
